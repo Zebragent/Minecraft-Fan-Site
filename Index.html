@@ -1,0 +1,297 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{WB}bbbbbdddd's Minecraft Fan Webpage">
+    <title>{WB}bd's MC</title>
+   <link rel="icon" href="fav.png" type="image/x-icon">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   <html><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+			font-family: Arial;
+			margin: 0;
+  background-image: url("https://i.redd.it/97nc1919bogy.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.alert {
+  padding: 20px;
+  background-color: #008c56;
+  color: white;
+  border: 3px #36d184 solid;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+			position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+			cursor: pointer;
+		}
+
+	
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 20%;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: #d1fdff;
+      cursor: pointer;
+      border: 1px black solid;
+		}
+
+
+		/* Container for image text */
+		.caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+			float: left;
+			width: 16.66%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+			opacity: 1;
+		}
+    .icon {
+      width: 100%;
+      background-color: black;
+    }
+    .icon:hover {
+      opacity: 60%;
+    }
+        .icons {
+
+    }
+    .icons:hover {
+      opacity: 60%;
+    }
+    html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+	</style>
+  </head>
+  <body style="">
+    <script src="script.js"></script>
+    <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Welcome</strong> to The Minecraft Fan Site of {WB}bbbbbdddd! Scroll Down to See Tons of Awesome Content! Click
+  <a style="color: white;" href="https://Minecraft-Phone.brodyblask1.repl.co">Here</a> If You're On Mobile</div>
+</div>
+<div style="width: 65%; margin-left: 17.5%; margin-top: 10px; border: 5px white solid; background-color: white;">
+   
+    <div class="mySlides">
+    <img src="house.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="house2.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="screenshot1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="screenshot2.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="friend.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="gear.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="house.png" style="width:100%" onclick="currentSlide(1)" alt="Main Survival World Living Area">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="house2.png" style="width:100%" onclick="currentSlide(2)" alt="Living Area POV 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="screenshot1.png"
+      
+       style="width:100%" onclick="currentSlide(3)" alt="My House">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="screenshot2.png" style="width:100%" onclick="currentSlide(4)" alt="View of Village + Base">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="friend.png" style="width:100%" onclick="currentSlide(5)" alt="Selfie :)">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="gear.png" style="width:100%" onclick="currentSlide(6)" alt="Minecraft Survival Gear (2 Max Enchant Sets of Armor, Ore Blocks, Full Max Enchant Tools, Stocked Shulkers)">
+    </div>
+  </div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div style="margin-top: 25%">
+<div style="padding: 0px; background-color: #008c56; color: white; text-align: center; border: 5px white solid;width: 65%; margin-left: 17.5%">
+  <h2>⬆</h2>
+<h3>Screenshots From My Minecraft Worlds</h3>
+<hr style="height: 0.1px; border: 3px white solid; width: 51%; "></hr>
+<div style="color: white; text-align: center;">
+<h3>Click Image To See Weird Screenshots From Speedruns!</h3>
+<h2>⬇</h2>
+</div>
+</div>
+</div>
+</div>
+
+<a class="icons" style="width: 65%; margin-left: 17.5%" href="https://docs.google.com/presentation/d/1Mm3K7yNS1yruvMS0GJWk3GrWeSezTzHrDbyXm5MxVAE/edit#slide=id.gee63dc07d3_0_31"><img style="border: 5px white solid; width: 65%; margin-top: 25%" src="thumbnail.png"></a>
+<div style="margin-top: 25%">
+<div style="padding: 0px; background-color: #008c56; color: white; text-align: center; border: 5px white solid ; width: 65%; margin-left: 17.5%">
+<div style="color: white; text-align: center; width: 65%; margin-left: 17.5%;">
+<h3>Impossible Minecraft Quiz on Left, Site With Numerous Minecraft Quizzes on Right</h3>
+<h2>⬇</h2>
+</div>
+</div>
+<div style="color: white; text-align: center; display: flex; flex-direction: row; justify-content: center; margin-top: 25%; width: 65%; margin-left: 17.5%;">
+<a class="icons" href="https://www.quizexpo.com/amazing-minecraft-quiz/"><img src="quiz.png" style="width: 100%; border: 5px white solid;"></a>
+<a class="icons" href="https://www.sporcle.com/games/subcategory/minecraft"><img style="width: 100%; border: 5px white solid;" src="quiz2.png"></a></div>
+
+
+<div style="margin-top: 25%">
+<div style="padding: 0px; background-color: #008c56; color: white; text-align: center; border: 5px white solid; width: 65%; margin-left: 17.5%;">
+<div style="color: white; text-align: center; width: 65%; margin-left: 17.5%">
+<h3 style="">Links to Fun Minecraft-Related Sites!</h3>
+<h2>⬇</h2>
+</div>
+</div>
+<div style="color: white; text-align: center; display: flex; flex-direction: row; justify-content: center; margin-top: 25%; width: 65%; margin-left: 17.5%">
+<a style="width: 100%; padding: 10px;" href="https://discord.com/invite/minecraft"><img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPHOKa-G1o3ZkbNRG9QqqhuVtDL-6749SdBg&usqp=CAU" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+<a style="width: 100%; padding: 10px;" href="https://www.reddit.com/r/Minecraft/"><img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmhDAdba2rnkSqBuM2ndDc24snLcMINt2PmDxPPDm6WL1xiFt3RISb2JIWPDajZdWKds&usqp=CAU" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+  <a  style="width: 100%; padding: 10px;" href="https://minecraft.fandom.com/wiki/Minecraft_Wiki"><img class="icon" src="https://media.glassdoor.com/sqll/428648/fandom-squarelogo-1533568635940.png" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+<a  style="width: 100%; padding: 10px;" href="https://discord.gg/Vf653ZwhMN"><img class="icon" src="https://pbs.twimg.com/profile_images/1329889478815739906/M5Kig3BR_400x400.jpg" style="width: %; border: 3px white solid; border-radius: 10%;"></a></div>
+<div style="color: white; text-align: center; display: flex; flex-direction: row; justify-content: center; margin-top: 20px; width: 65%; margin-left: 17.5%">
+<a  style="width: 100%; padding: 10px;" href="https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg"><img src="icon.png" class="icon" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+<a  style="width: 100%; padding: 10px;" href="https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg"><img class="icon" src="icon2.png" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+<a  style="width: 100%; padding: 10px;" href="https://www.minecraft.net/en-us/get-minecraft"><img class="icon" src="icon3.png" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+<a  style="width: 100%; padding: 10px;" href="https://scratch.mit.edu/projects/10128407/"><img class="icon" src="icon4.jpeg" style="width: %; border: 3px white solid; border-radius: 10%;"></a>
+</div>
+</div>
+<div>
+  <div style="padding: 0px; background-color: #008c56; color: white; text-align: center; border: 5px white solid; width: 65%; margin-left: 17.5%; margin-top: 25%;">
+<div style="color: white; text-align: center; width: 65%; margin-left: 17.5%">
+<h3 style="">Great Minecraft Youtubers, Click To Check Out Their Channels!</h3>
+<h2>⬇</h2>
+</div>
+</div>
+
+<div style="color: white; text-align: center; display: flex; flex-direction: row; justify-content: center; margin-top: 25%; width: 65%; margin-left: 17.5%">
+<a href="https://www.youtube.com/user/technothepig"><img class="icon" style="width: 100%;" src="yt1.png"></a>
+<a href="https://www.youtube.com/c/dream"><img class="icon" style="width: 100%; margin-left: 10px;" src="yt2.png"></a>
+</div>
+
+<div style="color: white; text-align: center; display: flex; flex-direction: row; justify-content: center; margin-top: 10px; width: 65%; margin-left: 17.5%">
+<a href="https://www.youtube.com/user/Creolesbackfire"><img class="icon" style="width: 100%;" src="yt3.png"></a>
+<a href=""><img class="icon" style="width: 100%; margin-left: 10px;" src="yt4.png"></a>
+</div>
+
+<h1 style="color: white; text-align: center; background-color: #008c56; border: 5px white solid; width: 65%; margin-left: 17.5%; margin-top: 25%">
+MORE CONTENT COMING SOON!
+</h1>
+</div>
+<h2 style="margin-top: 25%;"></h2>
+</body>
+</html>
